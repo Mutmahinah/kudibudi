@@ -1,3 +1,4 @@
+streamlit-lottie
 streamlit
 openai>=1.0.0
 pandas
