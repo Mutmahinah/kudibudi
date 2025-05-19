@@ -2,6 +2,7 @@ import streamlit as st
 from app.components.dashboard_cards import show_dashboard_card
 from service.gpt_service import analyze_expense_with_gpt
 from app.utils.text_utils import translate_to_pidgin
+st.set_page_config(page_title="Kudibuddy Dashboard")
 st.markdown("""
     <style>
     .stApp {
@@ -17,7 +18,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.set_page_config(page_title="Kudibuddy Dashboard")
 
 st.title("👋 Welcome to Kudibuddy")
 income = st.number_input("Enter your monthly income (₦):", min_value=0)
