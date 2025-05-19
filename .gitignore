@@ -178,3 +178,8 @@ __pycache__/
 
 # PyPI configuration file
 .pypirc
+
+__pycache__/
+*.pyc
+.env
+*.sqlite3
