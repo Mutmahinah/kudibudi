@@ -1,9 +1,9 @@
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
+import streamlit as st
 
-
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = st.secrets['OPENAI_API_KEY']
 
 def analyze_expense_with_gpt(prompt):
     chat = client.chat.completions.create(
