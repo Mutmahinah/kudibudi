@@ -1,6 +1,6 @@
 import streamlit as st
 from app.components.dashboard_cards import show_dashboard_card
-from services.gpt_service import analyze_expense_with_gpt
+from service.gpt_service import analyze_expense_with_gpt
 from app.utils.text_utils import translate_to_pidgin
 st.markdown("""
     <style>
